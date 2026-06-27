@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Wisata sukaJOMOK</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo.jpg" alt="Logo SukaJOMOK" style="height: 40px; margin-right: 10px; border-radius: 50%;">
+                SukaJOMOK
+            </a>
+
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Beranda</a></li>
+                    <li><a href="#about" class="nav-link">Profil</a></li>
+                    <li><a href="#catalog" class="nav-link">Produk Unggulan</a></li>
+                    <li><a href="#news" class="nav-link">Kegiatan</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="badge">Selamat Datang di</span>
+                <h1>Desa Wisata SukaJOMOK</h1>
+                <p>Menjelajahi keindahan burit, mani lokal, dan biji unggulan yang otentik dari karya warga kami.</p>
+                <div class="hero-buttons">
+                    <a href="#catalog" class="btn btn-primary">Lihat Produk <i class="fas fa-arrow-right"></i></a>
+                    <a href="#about" class="btn btn-outline-light">Kenali Kami</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section id="stats" class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <h3 class="stat-number">50+</h3>
+                        <p>KK di SukaJOMOK</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-store"></i></div>
+                        <h3 class="stat-number">5</h3>
+                        <p>UMKM Aktif</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-seedling"></i></div>
+                        <h3 class="stat-number">50+</h3>
+                        <p>Varian Rasa</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <h3 class="stat-number">3</h3>
+                        <p>Spot Wisata</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Profil Desa</span>
+                    <h2>Tentang SukaJOMOK</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Potensi Alam & Budaya</h3>
+                        <p>Desa Wisata sukaJOMOK adalah surga tersembunyi yang menawarkan perpaduan sempurna antara
+                            keindahan alam kejomokan dan kearifan mani yang masih terjaga. Terletak di dataran tinggi
+                            dengan apel hijau yang sejuk.</p>
+
+                        <ul class="about-features">
+                            <li><i class="fas fa-check-circle"></i> Sentra Kerajinan Bool</li>
+                            <li><i class="fas fa-check-circle"></i> Hasil Mani Organik</li>
+                            <li><i class="fas fa-check-circle"></i> Masyarakat Ramah & Gotong Royong</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <!-- Gunakan URL gambar dari observasimu nanti di sini -->
+                        <img src="pemandangan desa.jpg" alt="Pemandangan Desa sukaJOMOK">
+                        <div class="experience-badge">
+                            <span class="years">10+</span>
+                            <span class="text">Tahun<br>Pengalaman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- CATALOG SECTION -->
+            <section id="catalog" class="catalog section-padding bg-light">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="subtitle">UMKM Lokal</span>
+                        <h2>Katalog Produk Warga</h2>
+                        <div class="divider mx-auto"></div>
+                    </div>
+
+                    <!-- Search & Filter -->
+                    <div class="catalog-controls">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="searchInput" placeholder="Cari produk (misal: Kopi, Keripik)...">
+                        </div>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">Semua</button>
+                            <button class="filter-btn" data-filter="makanan">Makanan</button>
+                            <button class="filter-btn" data-filter="kerajinan">Kerajinan</button>
+                            <button class="filter-btn" data-filter="pertanian">Hasil Tani</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Grid (Diisi melalui JavaScript) -->
+                    <div class="product-grid" id="productGrid">
+                        <!-- Produk akan dirender di sini -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- NEWS SECTION -->
+            <section id="news" class="news section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="subtitle">Informasi Terkini</span>
+                        <h2>Berita & Kegiatan</h2>
+                        <div class="divider"></div>
+                    </div>
+
+                    <div class="news-grid">
+                        <!-- Berita 1 -->
+                        <article class="news-card">
+                            <div class="news-image">
+                                <img src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&q=80&w=600"
+                                    alt="Kerja Bakti">
+                                <div class="news-date">
+                                    <span>15</span> Okt
+                                </div>
+                            </div>
+                            <div class="news-content">
+                                <h3><a href="#">Kerja Bakti Membersihkan Irigasi Desa</a></h3>
+                                <p>Warga bergotong royong membersihkan saluran air untuk menyambut musim tanam agar
+                                    aliran
+                                    lancar.</p>
+                                <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Berita 2 -->
+                        <article class="news-card">
+                            <div class="news-image">
+                                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=600"
+                                    alt="Pelatihan">
+                                <div class="news-date">
+                                    <span>08</span> Okt
+                                </div>
+                            </div>
+                            <div class="news-content">
+                                <h3><a href="#">Pelatihan Digital Marketing UMKM</a></h3>
+                                <p>Pelatihan pemasaran online yang diadakan oleh mahasiswa KKN untuk membantu ibu-ibu
+                                    memasarkan keripik.</p>
+                                <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Berita 3 -->
+                        <article class="news-card">
+                            <div class="news-image">
+                                <img src="https://images.unsplash.com/photo-1559124436-0f7ff3dcf394?auto=format&fit=crop&q=80&w=600"
+                                    alt="Panen Raya">
+                                <div class="news-date">
+                                    <span>25</span> Sep
+                                </div>
+                            </div>
+                            <div class="news-content">
+                                <h3><a href="#">Panen Raya Kopi sukaJOMOK</a></h3>
+                                <p>Tahun ini hasil panen kopi jenis robusta meningkat 20% dibandingkan tahun sebelumnya,
+                                    meningkatkan ekonomi warga.</p>
+                                <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="contact section-padding bg-light">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="subtitle">Mari Terhubung</span>
+                        <h2>Hubungi Kami</h2>
+                        <div class="divider mx-auto"></div>
+                    </div>
+
+                    <div class="contact-grid">
+                        <div class="contact-info-cards">
+                            <div class="info-card">
+                                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <h4>Alamat</h4>
+                                <p>Jl. Desa sukaJOMOK No. 1<br>Kecamatan Indah, Kabupaten Makmur</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                                <h4>Telepon / WhatsApp</h4>
+                                <p>+62 812-3456-7890</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="icon"><i class="fas fa-envelope"></i></div>
+                                <h4>Email</h4>
+                                <p>halo@sukaJOMOK.desa.id</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-map">
+                            <!-- Ganti iframe ini dengan embed map hasil observasimu -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56347862248!2d107.573117!3d-6.903444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Bandung%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1711200000000!5m2!1sen!2sid"
+                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="#" class="logo"><i class="fas fa-leaf"></i> sukaJOMOK</a>
+                <p>Website resmi Desa Wisata sukaJOMOK. Membangun desa mandiri dengan mengedepankan kearifan lokal dan
+                    ekonomi kreatif.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Profil Desa</a></li>
+                    <li><a href="#catalog">Produk Warga</a></li>
+                    <li><a href="#news">Kegiatan Terbaru</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Kategori UMKM</h3>
+                <ul>
+                    <li><a href="#catalog">Makanan Tradisional</a></li>
+                    <li><a href="#catalog">Kerajinan Tangan</a></li>
+                    <li><a href="#catalog">Hasil Pertanian</a></li>
+                    <li><a href="#catalog">Jasa Wisata</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Desa Wisata sukaJOMOK. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Utama -->
+    <script src="script.js"></script>
+</body>
+
+</html>
